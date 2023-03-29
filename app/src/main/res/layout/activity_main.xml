@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Lisää opiskelija tai listaa opiskelijat, paina nappia!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddNewStudent"
+        android:layout_width="135dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:onClick="switchToAddStudent"
+        android:text="Lisää opiskelija"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnListAllStudents"
+        android:layout_width="135dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:onClick="switchToListAllStudents"
+        android:text="Listaa opiskelijat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddNewStudent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
